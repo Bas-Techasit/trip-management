@@ -28,4 +28,4 @@ jobs:
         run: npm run test --project commands
 
       - name: Build app
-        run: npm run build
+        run: npm run build --project commnads
