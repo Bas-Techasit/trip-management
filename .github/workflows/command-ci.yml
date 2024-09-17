@@ -4,9 +4,13 @@ on:
   push:
     branches:
       - main
+    paths:
+      - apps/commands/**
   pull_request:
     branches:
       - main
+    paths:
+      - apps/commands/**
 
 jobs:
   build:
