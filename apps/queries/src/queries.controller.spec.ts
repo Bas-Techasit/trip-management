@@ -16,7 +16,9 @@ describe('QueriesController', () => {
 
   describe('root', () => {
     it('should return "Hello World!"', () => {
-      expect(queriesController.getHello()).toBe('Hello World!');
+      expect(queriesController.getHello()).toBe(
+        'Test changed this file to test ci/cd!',
+      );
     });
   });
 });
