@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/trip-management/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/trip-management/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/trip-management",
+  "projects": {
+    "trip-management": {
+      "type": "application",
+      "root": "apps/trip-management",
+      "entryFile": "main",
+      "sourceRoot": "apps/trip-management/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/trip-management/tsconfig.app.json"
+      }
+    },
+    "commands": {
+      "type": "application",
+      "root": "apps/commands",
+      "entryFile": "main",
+      "sourceRoot": "apps/commands/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/commands/tsconfig.app.json"
+      }
+    },
+    "queries": {
+      "type": "application",
+      "root": "apps/queries",
+      "entryFile": "main",
+      "sourceRoot": "apps/queries/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/queries/tsconfig.app.json"
+      }
+    }
+  }
+}
